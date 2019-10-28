@@ -1,0 +1,116 @@
+#hamming {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(76, 138, 231);
+    color: #f0f0f0;
+    padding-top: 5vh;
+
+    .title-container {
+        text-align: center;
+        margin: 2em 0;
+
+        .title {
+            font-size: 3em;
+        }
+    }
+
+    .control-btns {
+        .hamming-btn {
+            margin: 1em 3em;
+            padding: 0.5em 1em;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            background: transparent;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 20px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .active {
+            background: #fff;
+            color: rgb(76, 138, 231);
+            border-color: rgb(76, 138, 231);
+        }
+    }
+
+    .hamming-app {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 1em;
+        padding: 1em;
+
+        .input-container {
+            margin: 1em 0;
+            font-size: 1.2em;
+
+            label {
+                display: inline-block;
+                min-width: 50px;
+            }
+
+            input {
+                border: 2px solid #fff;
+                border-radius: 12px;
+                outline: none;
+                color: #000;
+                text-indent: 8px;
+                padding: 2px 0;
+
+                &:focus {
+                    border-color: darkblue;
+                }
+            }
+        }
+
+        .execute-btn-container {
+            button {
+                margin: 1em 3em;
+                padding: 0.5em 1em;
+                border: 2px solid #fff;
+                border-radius: 12px;
+                background: transparent;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .info-container {
+            display: none;
+
+            .messages-container {
+                margin: 1em 0;
+               
+                p {
+                    margin: 0.6em;
+                    font-size: 1.2em;
+                }
+            }
+
+            .result-container {
+                margin: 1em 0;
+                
+                p {
+                    margin: 0.6em;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .hamming-decode {
+            display: none;
+        }
+    }
+}
+
+@import 'hamming_media';

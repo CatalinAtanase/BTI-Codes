@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Cod Hamming</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="crc.html">
+                CRC
+            </a>
+            <a href="hamming.html">
+                Hamming
+            </a>
+        </nav>
+    </header>
+
+    <main id="hamming">
+        <div class="title-container">
+            <h1 class="title">Cod Hamming</h1>
+        </div>
+
+        <div class="control-btns">
+            <button class="hamming-btn codificare-hamming active">
+                Codificare
+            </button>
+            <button class="hamming-btn decodificare-hamming">
+                Decodificare
+            </button>
+        </div>
+
+        <div class="hamming-app">
+            <div class="hamming-code">
+                <div class="input-container">
+                    <label for="">Cod: </label>
+                    <input class="hamming-code-input" type="text" placeholder="ex. 1111000">
+                </div>
+                <div class="execute-btn-container">
+                    <button class="execute-btn-hamming execute-btn-hamming-code">Calculeaza</button>
+                </div>
+                <div class="info-container info-container-code">
+                    <div class="messages-container messages-container-code-hamming">
+
+                    </div>
+                    <div class="result-container result-container-code-hamming">
+                        <p class="result">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hamming-decode">
+                <div class="input-container">
+                    <label for="">Cod: </label>
+                    <input type="text" placeholder="ex. 1111000" class="hamming-decode-input">
+                </div>
+                <div class="execute-btn-container">
+                    <button class="execute-btn-hamming execute-btn-hamming-decode">Calculeaza</button>
+                </div>
+                <div class="info-container info-container-decode">
+                    <div class="messages-container messages-container-decode-hamming">
+                        <p class="message">
+                            <p>
+                    </div>
+                    <div class="result-container result-container-decode-hamming">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <script src="script/functions_hamming.js"></script>
+    <script src="script/controls.js"></script>
+    <script src="script/hamming.js"></script>
+</body>
+
+</html>

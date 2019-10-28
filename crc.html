@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <title>CRC</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="crc.html">
+                CRC
+            </a>
+            <a href="hamming.html">
+                Hamming
+            </a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="title-container">
+            <h1 class="title">Codificare CRC</h1>
+        </div>
+        <div class="app-container">
+            <div class="tabs">
+                <button class="tab active">
+                    Codificare
+                </button>
+                <button class="tab">
+                    Decodificare
+                </button>
+            </div>
+            <div class="app codificare">
+                <div class="value mx">
+                    <label for="">M:</label>
+                    <input type="text" class="user-input">
+                </div>
+                <div class="value gx">
+                    <label for="">G:</label>
+                    <input type="text" class="user-input">
+                </div>
+                <div class="info">
+                    <p>Sunt acceptate doar valori de 0 si 1.</p>
+                </div>
+                <div class="action-btn">
+                    <button class="go-btn codificare-btn">
+                        Calculeaza
+                    </button>
+                </div>
+                <div class="result-container">
+                    <p><span class="label">M(x)</span>=<span class="mxv valuex"></span></p>
+                    <p><span class="label">G(x)</span>=<span class="gxv valuex"></span></p>
+                    <p><span class="label">M'(x)</span>=<span class="mdxv valuex"></span></p>
+                    <p><span class="label">M'(x) // G(x)</span>=<span class="rezx valuex"></span></p>
+                    <p><span class="label">R(x)</span>=<span class="rxv valuex"></span></p>
+                    <p><span class="label">T(x)</span>=<span class="txv valuex"></span></p>
+                    <p>sau</p>
+                    <p><span class="label">T</span>=<span class="txAsXv valuex"></span></p>
+                </div>
+            </div>
+
+            <div class="app decodificare">
+                <div class="value mx">
+                    <label for="">T:</label>
+                    <input type="text" class="user-input">
+                </div>
+                <div class="value gx">
+                    <label for="">G:</label>
+                    <input type="text" class="user-input">
+                </div>
+                <div class="info">
+                    <p>Sunt acceptate doar valori de 0 si 1.</p>
+                </div>
+                <div class="action-btn">
+                    <button class="go-btn decodificare-btn">
+                        Calculeaza
+                    </button>
+                </div>
+                <div class="result-container result-container-decode">
+                    <p class="status"></p>
+                    <p><span class="label">T(x)</span>=<span class="txD valuex"></span></p>
+                    <p><span class="label">G(x)</span>=<span class="gxD valuex"></span></p>
+                    <p><span class="label">T(x) // G(x)</span>=<span class="rezD valuex"></span></p>
+                    <p><span class="label">R(x)</span>=<span class="rxD valuex"></span></p>
+                    <p><span class="label">M</span>=<span class="mxD valuex"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/polynomial.js"></script>
+    <script src="script/functions_crc.js"></script>
+    <script src="script/crc.js"></script>
+</body>
+
+</html>

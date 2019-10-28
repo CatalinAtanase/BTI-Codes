@@ -1,0 +1,124 @@
+.main {
+    background: rgb(76, 138, 231);
+    min-height: 100vh;
+
+    .title-container {
+        text-align: center;
+
+        .title {
+            font-size: 3em;
+            padding-top: 1em;
+        }
+    }
+}
+
+.app-container {
+    padding-top: 5vh;
+
+    .tabs {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+
+        .tab {
+            margin: 1em 3em;
+            padding: 0.5em 1em;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            background: transparent;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 20px;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .active {   
+            background: #fff;
+            color: rgb(76, 138, 231);
+            border-color: rgb(76, 138, 231);
+        }
+    }
+
+    .app {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 1em;
+        padding: 1em;
+
+        .value {
+            margin: 1em 0;
+            font-size: 1.2em;
+
+            label {
+                display: inline-block;
+                min-width: 50px;
+            }
+
+            input {
+                border: 2px solid #fff;
+                border-radius: 12px;
+                outline: none;
+                color: #000;
+                text-indent: 8px;
+                padding: 2px 0;
+
+                &:focus {
+                    border-color: darkblue;
+                }
+            }
+        }
+
+        .info {
+            p {
+                font-size: .8em;
+            }
+        }
+
+        .action-btn {
+            text-align: center;
+
+            button {
+                margin: 1em 3em;
+                padding: 0.5em 1em;
+                border: 2px solid #fff;
+                border-radius: 12px;
+                background: transparent;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .result-container {
+            display: none;
+            p {
+                margin: .5em;
+
+                .label {
+                    display: inline-block;
+                    min-width: 50px;
+                }
+
+                .valuex {
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .decodificare {
+        display: none;
+    }
+}
+
+@import 'media_crc';

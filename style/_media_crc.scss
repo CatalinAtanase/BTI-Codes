@@ -1,0 +1,46 @@
+@media screen and (min-width: 1024px) {
+    .app-container {
+        .app {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 2em;
+            padding: 1em;
+
+            .value {
+                label {
+                    font-size: 20px;
+                }
+
+                input {
+                    font-size: 20px;
+                }
+            }
+
+            .info {
+                p {
+                    font-size: 0.9em;
+                }
+            }
+    
+            .result-container {
+                p {
+                    margin: 0.7em;
+    
+                    .label {
+                        font-size: 20px;
+                        display: inline-block;
+                        min-width: 50px;
+                    }
+    
+                    .valuex {
+                        font-size: 20px;
+                        display: inline-block;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

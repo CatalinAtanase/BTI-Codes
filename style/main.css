@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background: #4c8ae7;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  margin: 1em 2em;
+  text-decoration: none;
+  font-weight: bold;
+  padding: .4em 1em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+header nav a:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #fff;
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+  width: 0;
+}
+
+header nav a:hover:after {
+  width: 100%;
+}
+
+.main {
+  background: #4c8ae7;
+  min-height: 100vh;
+}
+
+.main .title-container {
+  text-align: center;
+}
+
+.main .title-container .title {
+  font-size: 3em;
+  padding-top: 1em;
+}
+
+.app-container {
+  padding-top: 5vh;
+}
+
+.app-container .tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.app-container .tabs .tab {
+  margin: 1em 3em;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.app-container .tabs .tab:hover {
+  opacity: 0.8;
+}
+
+.app-container .tabs .active {
+  background: #fff;
+  color: #4c8ae7;
+  border-color: #4c8ae7;
+}
+
+.app-container .app {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.app-container .app .value {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+.app-container .app .value label {
+  display: inline-block;
+  min-width: 50px;
+}
+
+.app-container .app .value input {
+  border: 2px solid #fff;
+  border-radius: 12px;
+  outline: none;
+  color: #000;
+  text-indent: 8px;
+  padding: 2px 0;
+}
+
+.app-container .app .value input:focus {
+  border-color: darkblue;
+}
+
+.app-container .app .info p {
+  font-size: .8em;
+}
+
+.app-container .app .action-btn {
+  text-align: center;
+}
+
+.app-container .app .action-btn button {
+  margin: 1em 3em;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.app-container .app .action-btn button:hover {
+  opacity: 0.8;
+}
+
+.app-container .app .result-container {
+  display: none;
+}
+
+.app-container .app .result-container p {
+  margin: .5em;
+}
+
+.app-container .app .result-container p .label {
+  display: inline-block;
+  min-width: 50px;
+}
+
+.app-container .app .result-container p .valuex {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.app-container .decodificare {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .app-container .app {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 2em;
+    padding: 1em;
+  }
+  .app-container .app .value label {
+    font-size: 20px;
+  }
+  .app-container .app .value input {
+    font-size: 20px;
+  }
+  .app-container .app .info p {
+    font-size: 0.9em;
+  }
+  .app-container .app .result-container p {
+    margin: 0.7em;
+  }
+  .app-container .app .result-container p .label {
+    font-size: 20px;
+    display: inline-block;
+    min-width: 50px;
+  }
+  .app-container .app .result-container p .valuex {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+#hamming {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background: #4c8ae7;
+  color: #f0f0f0;
+  padding-top: 5vh;
+}
+
+#hamming .title-container {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#hamming .title-container .title {
+  font-size: 3em;
+}
+
+#hamming .control-btns .hamming-btn {
+  margin: 1em 3em;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#hamming .control-btns .hamming-btn:hover {
+  opacity: 0.8;
+}
+
+#hamming .control-btns .active {
+  background: #fff;
+  color: #4c8ae7;
+  border-color: #4c8ae7;
+}
+
+#hamming .hamming-app {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+#hamming .hamming-app .input-container {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+#hamming .hamming-app .input-container label {
+  display: inline-block;
+  min-width: 50px;
+}
+
+#hamming .hamming-app .input-container input {
+  border: 2px solid #fff;
+  border-radius: 12px;
+  outline: none;
+  color: #000;
+  text-indent: 8px;
+  padding: 2px 0;
+}
+
+#hamming .hamming-app .input-container input:focus {
+  border-color: darkblue;
+}
+
+#hamming .hamming-app .execute-btn-container button {
+  margin: 1em 3em;
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hamming .hamming-app .execute-btn-container button:hover {
+  opacity: 0.8;
+}
+
+#hamming .hamming-app .info-container {
+  display: none;
+}
+
+#hamming .hamming-app .info-container .messages-container {
+  margin: 1em 0;
+}
+
+#hamming .hamming-app .info-container .messages-container p {
+  margin: 0.6em;
+  font-size: 1.2em;
+}
+
+#hamming .hamming-app .info-container .result-container {
+  margin: 1em 0;
+}
+
+#hamming .hamming-app .info-container .result-container p {
+  margin: 0.6em;
+  font-size: 1.2em;
+}
+
+#hamming .hamming-app .hamming-decode {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #hamming .hamming-app {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 1em;
+    padding: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
